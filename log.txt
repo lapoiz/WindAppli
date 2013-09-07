@@ -1,0 +1,19 @@
+09-01 16:53:59.731: D/Input(18338): tpd read y fail: Bad file number
+09-01 16:53:59.765: V/Provider/Setting(18338): invalidate [system]: current 736 != cached 0
+09-01 16:53:59.877: I/Web Console(18338): dans HomeCtrl at file:///android_asset/www/js/controllers.js:5
+09-01 16:53:59.879: I/Web Console(18338): In localStorage:[object Object] at file:///android_asset/www/js/controllers.js:32
+09-01 16:53:59.916: E/Web Console(18338): Error: $digest already in progress
+09-01 16:53:59.916: E/Web Console(18338):     at Error (unknown source)
+09-01 16:53:59.916: E/Web Console(18338):     at beginPhase (file:///android_asset/www/lib/angular.js:9203:15)
+09-01 16:53:59.916: E/Web Console(18338):     at Object.$apply (file:///android_asset/www/lib/angular.js:9005:11)
+09-01 16:53:59.916: E/Web Console(18338):     at [object Object].getListSpot (file:///android_asset/www/js/controllers.js:37:16)
+09-01 16:53:59.916: E/Web Console(18338):     at [object Object].subscribe (file:///android_asset/www/cordova.js:707:11)
+09-01 16:53:59.916: E/Web Console(18338):     at HTMLDocument.addEventListener (file:///android_asset/www/cordova.js:132:34)
+09-01 16:53:59.916: E/Web Console(18338):     at Object.init (file:///android_asset/www/js/controllers.js:11:18)
+09-01 16:53:59.916: E/Web Console(18338):     at new HomeCtrl (file:///android_asset/www/js/controllers.js:53:12)
+09-01 16:53:59.916: E/Web Console(18338):     at invoke (file:///android_asset/www/lib/angular.js:2931:28)
+09-01 16:53:59.916: E/Web Console(18338):     at Object.instantiate (file:///android_asset/www/lib/angular.js:2943:23) at file:///android_asset/www/lib/angular.js:6349
+09-01 16:53:59.918: D/WebRequest(18338): start loading url: http://www.lapoiz.com/Wind/web/app.php/json/spot/list
+09-01 16:53:59.935: D/WebRequest(18338): start loading url: http://www.lapoiz.com/Wind/web/app.php/json/spot/data/1
+09-01 16:53:59.973: I/Web Console(18338): dans HomeCtrl at file:///android_asset/www/js/controllers.js:5
+09-01 16:53:59.975: I/Web Console(18338): In localStorage:[object Object] at file:///android_asset/www/js/controllers.js:32

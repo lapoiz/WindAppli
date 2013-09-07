@@ -1,0 +1,32 @@
+<div class="topcoat-navigation-bar">
+	<div class="topcoat-navigation-bar__item left quarter">
+        <span class="topcoat-icon logo-icon"></span>
+    </div>
+	
+    <div class="topcoat-navigation-bar__item center half">
+        <h1 class="topcoat-navigation-bar__title">LaPoizWind</h1>
+    </div>
+    <div class="topcoat-navigation-bar__item right quarter">
+        <a class="topcoat-icon-button--quiet" ng-click="changeSettings()">
+            <span class="topcoat-icon settings-icon"></span>
+        </a>
+    </div>
+</div>
+
+<div class="topcoat-list__container list">
+    <h3 class="topcoat-list__header">Spots</h3>
+	<loading></loading>
+    <ul class="topcoat-list">
+
+        <li ng-repeat="spot in spots.list | filter:query | orderBy:orderProp" 
+            class="topcoat-list__item" 
+            ng-click="slidePage('/spot/'+spot.id)">
+            <span>{{spot.name}}</span>
+        </li>
+        
+    </ul>
+    <div class="topcoat-navigation-bar">
+        <h1 class="centerize" ng-show="showURL" ng-swipe-right="showURL=false"><a href="http://www.lapoiz.com">www.lapoiz.com</a></h1>
+    </div>
+</div>
+<ng-include src="'partials/settingsOverlay.html'"></ng-include>

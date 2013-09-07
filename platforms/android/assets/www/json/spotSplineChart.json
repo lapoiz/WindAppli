@@ -1,0 +1,56 @@
+{
+ 	"title": {
+    	"text": "Saint Aubin"
+  	},
+  	"subtitle": {
+    	"text": "Prévision météo"
+  	},
+  	"xAxis": {
+    	"type": "dateTime",
+        "dateTimeLabelFormats": { 
+        	"month": "%e. %b",
+            "year": "%b"
+    	}
+  	},
+  	"tooltip": {},
+  	"plotOptions": {
+    	"area": {
+      		"pointStart": 1940,
+      		"marker": {
+        		"enabled": false,
+        		"symbol": "circle",
+        		"radius": 2,
+        		"states": {
+          			"hover": {
+            			"enabled": true
+          			}
+        		}
+      		}
+    	}
+  	},
+	"series":[
+		{
+			"name":"Windguru",
+			"data": [
+				11,
+				8,
+				3,
+				2,
+				10,
+				6,
+				12
+			]
+		},{
+			"name":"WindFinder",
+			"data": [
+				13,
+				9,
+				5,
+				3,
+				8,
+				5,
+				6
+			]
+		}
+	]
+}

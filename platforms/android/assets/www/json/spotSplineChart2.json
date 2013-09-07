@@ -1,0 +1,25 @@
+{
+ 	"title": {
+    	"text": "Saint Aubin"
+  	},
+  	"subtitle": {
+    	"text": "Prévision météo"
+  	},
+  	"xAxis": {
+    	"type": "datetime",
+        "dateTimeLabelFormats": { 
+        	"month": "%e. %b",
+            "year": "%b"
+    	}
+  	},
+  	"tooltip": {},
+	"series":[
+		{
+			"name":"Windguru",
+			"data": [
+				[1362991572000,11],
+				[1362992572000,8]
+			]
+		}
+	]
+}
