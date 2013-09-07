@@ -2,7 +2,7 @@
 
 /* Controllers */
 function HomeCtrl($scope,navSvc,$rootScope,$http,serverURL,webSiteURL) {
-    console.log("dans HomeCtrl");
+    //console.log("dans HomeCtrl");
     $scope.loading = true;
     $scope.webSiteURL=webSiteURL;
     $scope.serverURL=serverURL;
@@ -14,7 +14,7 @@ function HomeCtrl($scope,navSvc,$rootScope,$http,serverURL,webSiteURL) {
     $scope.getAllSpot = function(){ 
         $http({
             //url: 'http://www.lapoiz.com/Wind/web/app.php/json/spot/list',
-        	url: serverURL+'json/spot/list',
+            url: serverURL+'json/spot/list',
             method: 'GET',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
@@ -29,7 +29,7 @@ function HomeCtrl($scope,navSvc,$rootScope,$http,serverURL,webSiteURL) {
     function getListSpot(){
     	var value = window.localStorage.getItem("list_spots");
     	$scope.spots = value;
-    	console.log("In localStorage:"+value);
+    	//console.log("In localStorage:"+value);
     	
         if (navigator.connection.type!=Connection.NONE){
             $scope.getAllSpot();
